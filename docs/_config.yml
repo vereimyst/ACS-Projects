@@ -4,7 +4,7 @@ description: Posting all code, results, and analysis for each project
 
 # remote_theme: pmarsceill/just-the-docs
 theme: just-the-docs
-url: https://just-the-docs.github.io
+url: https://vereimyst.github.io/acs-projects
 nav_enabled: true
 heading_anchors: true
 search_enabled: false
