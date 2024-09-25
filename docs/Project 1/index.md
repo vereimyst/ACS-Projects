@@ -6,7 +6,7 @@ nav_order: 2
 has_children: true
 ---
 
-# Project #1: Cache and Memory Performance Profiling
+# Cache and Memory Performance Profiling
 ### Due date: Sept. 25
 
 The objective of this project is to gain deeper understanding of cache and memory hierarchy in modern computers. You should design a set of experiments that will quantitatively reveal the following:

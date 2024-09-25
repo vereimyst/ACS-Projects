@@ -5,9 +5,9 @@ nav_order: 1
 has_children: false
 ---
 
-# RPI ECSE 4320 Advanced Computer Systems Fall 2024
+# ECSE-4320 Advanced Computer Systems
 
-Taught by Professor [Zhang Tong](https://sites.ecse.rpi.edu/~tzhang/)
+Taught by Professor [Zhang Tong](https://sites.ecse.rpi.edu/~tzhang/) at Rensselaer Polytechnic Institute Fall 2024 semester.
 
 ## Course Objectives:
 
