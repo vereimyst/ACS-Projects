@@ -1,6 +1,9 @@
-layout: page
-title: "Project 1"
+---
+layout: default
+title: Project 1
 permalink: /project-1
+nav_order: 1
+---
 
 # Project #1: Cache and Memory Performance Profiling
 ### Due date: Sept. 25
