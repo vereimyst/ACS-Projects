@@ -5,20 +5,23 @@ nav_order: 1
 has_children: false
 ---
 
-## RPI ECSE 4320 Advanced Computer Systems Fall 2024
+# RPI ECSE 4320 Advanced Computer Systems Fall 2024
+
 Taught by Professor [Zhang Tong](https://sites.ecse.rpi.edu/~tzhang/)
 
-Course Objectives:
+## Course Objectives:
+
 - Learn to do a better job with the same tools
 - Make your work practically useful
 
-Projects:
+## Projects:
+
 1. Cache and Memory Performance Profiling
 2. Dense/Sparse Matrix-Matrix Multiplication
 3. SSD Performance Profiling
 4. In-Memory Key-Value Store with Concurrency Support
 5. [TBD]
 
-Citations:
+## Citations:
 
-Heavily referenced [Luque Lab's Athena](https://luquelab.github.io/Athena/) for Pages setup.
+This site uses [Just the Docs](https://just-the-docs.github.io/just-the-docs/) theme. Heavily referenced [Luque Lab's Athena](https://luquelab.github.io/Athena/) for setup.

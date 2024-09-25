@@ -1,10 +1,9 @@
 ---
 layout: default
 title: Project 1
-permalink: /project-1
+permalink: /project-1-desc
 nav_order: 2
-# parent: Myst's Projects for ACS
-has_children: false
+has_children: true
 ---
 
 # Project #1: Cache and Memory Performance Profiling
