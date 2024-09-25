@@ -1,7 +1,8 @@
 ---
 title: Myst's ACS Projects
 description: Posting all code, results, and analysis for each project
-logo: "/assets/images/m-callig"
+logo: "/assets/images/m-callig.jpg"
+favicon_ico: "/assets/images/favicon.ico"
 
 remote_theme: pmarsceill/just-the-docs
 color_scheme: dark
