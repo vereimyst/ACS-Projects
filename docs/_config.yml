@@ -8,7 +8,7 @@ url: https://vereimyst.github.io/acs-projects
 nav_enabled: true
 heading_anchors: true
 search_enabled: false
-# logo: "/assets/images/m-callig.jpg"
+logo: "/assets/images/m-callig.jpg"
 color_scheme: dark
 permalink: pretty
 ---
