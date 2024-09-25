@@ -18,3 +18,7 @@ Projects:
 3. SSD Performance Profiling
 4. In-Memory Key-Value Store with Concurrency Support
 5. [TBD]
+
+Citations:
+
+Heavily referenced [Luque Lab's Athena](https://luquelab.github.io/Athena/) for Pages setup.

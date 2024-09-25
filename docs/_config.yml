@@ -1,5 +1,10 @@
 ---
-theme: jekyll-theme-minimal
 title: Myst's ACS Projects
 description: Posting all code, results, and analysis for each project
+
+### Theme
+remote_theme: pmarsceill/just-the-docs
+
+### Color scheme supports "light" (default) and "dark"
+color_scheme: dark
 ---
