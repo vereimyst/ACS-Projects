@@ -3,6 +3,7 @@ layout: default
 title: Project 1
 permalink: /project-1
 nav_order: 1
+parent: Myst's Projects for ACS
 ---
 
 # Project #1: Cache and Memory Performance Profiling
