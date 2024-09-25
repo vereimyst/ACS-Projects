@@ -2,8 +2,9 @@
 layout: default
 title: Project 1
 permalink: /project-1
-nav_order: 1
-parent: Myst's Projects for ACS
+nav_order: 2
+# parent: Myst's Projects for ACS
+has_children: false
 ---
 
 # Project #1: Cache and Memory Performance Profiling
@@ -19,5 +20,3 @@ The objective of this project is to gain deeper understanding of cache and memor
 The Intel Memory Latency Checker is a useful tool: Google or ask ChatGPT about “Intel Memory Latency Checker”. The Linux “perf” command can gather lots of CPU runtime information such as cache miss ratio and TLB miss ratio, and you can Google or ask ChatGPT to learn more.
 
 Create a Github site to host all your projects through the semester. Post your code/script and detailed results and analysis on Github, and make sure your Github page is clear and self-explanatory.
-
-(The description can also be found in the PDF file attached in the root folder.)

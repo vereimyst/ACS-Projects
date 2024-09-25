@@ -1,6 +1,5 @@
 ---
 theme: jekyll-theme-minimal
-title: Myst's Projects for ACS
+title: Myst's ACS Projects
 description: Posting all code, results, and analysis for each project
-has_children: true
 ---
