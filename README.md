@@ -12,3 +12,5 @@ Projects:
 3. SSD Performance Profiling
 4. In-Memory Key-Value Store with Concurrency Support
 5. [TBD]
+
+This repository is licensed under the MIT License.
