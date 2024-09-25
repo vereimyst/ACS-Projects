@@ -24,4 +24,4 @@ Taught by Professor [Zhang Tong](https://sites.ecse.rpi.edu/~tzhang/) at Renssel
 
 ## Citations:
 
-This site uses [Just the Docs](https://just-the-docs.github.io/just-the-docs/) theme. Heavily referenced [Luque Lab's Athena](https://luquelab.github.io/Athena/) for setup.
+This site uses a gem-based approach to load the [Just the Docs](https://just-the-docs.github.io/just-the-docs/) theme. Heavily referenced [Luque Lab's Athena](https://luquelab.github.io/Athena/) for setup.
