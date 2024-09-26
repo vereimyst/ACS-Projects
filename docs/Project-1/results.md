@@ -30,7 +30,7 @@ L3 cache:       24 MiB (1 instance)
 
 This first method gives a generic overview of what cache structures exist in my laptop, an Alienware m15 R6. Notably, the numbers are rounded and have relatively low precision as a result. Additionally, we can (essentially) disregard the L1i cache capacity for the purposes of this project, as it is reserved for instructions. The second method unfortunately didn't work due to no SMBIOS nor DMI entry point being found. The third method gives a visual representation of the hierarchical structure that exists internally.
 
-![lstopo graphical output](assets/images/cpu.png)
+![lstopo graphical output](/docs/Project-1/assets/images/cpu.png)
 
 Again, the capacity values have low precision, though the visualization is quite helpful, allowing us to better understand how each block is connected. The last method gives the highest level of precision as well as some needed details about cache line size and associativity.
 
@@ -55,7 +55,7 @@ LEVEL4_CACHE_LINESIZE
 
 Holding some concern over whether WSL2 might be misrepresenting these values, I went into Task Manager and checked the Performance tab, shown below. Thankfully all the values line up, so we can move onto actually testing my system.
 
-![task manager cache values](assets/images/task-manager-cache-breakdown.png)
+![task manager cache values](/docs/Project-1/assets/images/task-manager-cache-breakdown.png)
 
 
 ## Part 1
@@ -77,16 +77,16 @@ Avg Write Latency for Main Memory: 14.650 ns
 
 We wish to evaluate the maximum bandwidth of the main memory under different data access granularity (i.e., 64B, 256B, 1024B) and different read vs. write intensity ratio (i.e., read-only, write-only, 70:30 ratio, 50:50 ratio). According to the task manager, as shown below, the memory clock speed is 3200 MT/s (megatransfers per second) or MHz for my laptop.
 
-![task manager memory bandwidth](assets/images/task-manager-memory-breakdown.png)
+![task manager memory bandwidth](/docs/Project-1/assets/images/task-manager-memory-breakdown.png)
 
 My laptop has 2 DDR4 SoDIMM, so ChatGPT calculated a bandwidth of 51.2 GB/s. However, according to the specs documentation on Dell's device support website, the other DDR4 has a memory speed of 3466 MHz, meaning the bandwidth it has should be slightly higher the resulting value.
 
-![dell specs](assets/images/dell-specs.png)
+![dell specs](/docs/Project-1/assets/images/dell-specs.png)
 
 The key point to be wary of here is ensuring the data is larger than the available caches since we are evaluating main memory. I also flushed the cache line to be safe. The following figures display one set of experimental values I obtained. The second is a up-scaled verion of the first (without the 5096B access) to better see the behavior as read ratio decreases.
 
-![memory speed graph](assets/images/memory-speed.png)
-![memory speed graph (scaled)](assets/images/memory-speed-scaled.png)
+![memory speed graph](/docs/Project-1/assets/images/memory-speed.png)
+![memory speed graph (scaled)](/docs/Project-1/assets/images/memory-speed-scaled.png)
 
 As expected, the maximum bandwidth reached is roughly 60GB/s, which is higher than the bandwidth calculated for 2 DDR4-3200s. What isn't expected is that regardless of the scale looked at, the largest chunk results in the highest memory bandwidth. This seems somewhat counterintuitive, but the larger data chunks allow for more optimal memory system use by reducing overhead.
 
@@ -95,9 +95,9 @@ As expected, the maximum bandwidth reached is roughly 60GB/s, which is higher th
 
 Next, we'd like a demonstration of what the queuing theory predicts in the tradeoff between read/write latency and throughput of the main memory. Queuing theory is the mathematics of lines, for which there are a couple main components. We have read/write requests as the entities and main memory as the "service facility" for this scenario. Using `lscpu`, I know that my laptop can have as many as 16 threads at once (8 cores per socket, 2 threads per core). An iteration of experimental results gave me the following data.
 
-![memory throughput read only](assets/images/throughput-r.png)
-![memory throughput write only](assets/images/throughput-w.png)
-![memory throughput combined](assets/images/throughput-rw.png)
+![memory throughput read only](/docs/Project-1/assets/images/throughput-r.png)
+![memory throughput write only](/docs/Project-1/assets/images/throughput-w.png)
+![memory throughput combined](/docs/Project-1/assets/images/throughput-rw.png)
 
 All graphs show a general trend of increasing latency as the number of threads in use increased, which perfectly demonstrates queuing theory. The only outlier value is for the 4-thread combined latency, which spiked up drastically. However, it is clear that, regardless of the irregular behavior, the throughput decreases where latency increases and vice versa.
 
@@ -146,7 +146,7 @@ Testing with 2MB Pages:
 
 This was over a sample size of 1000 iterations and the average latency is already on par with or greater than the latency of accessing the main memory. The latter value makes sense that it is more costly Given how costly TLB misses are and how frequently they occur, I think it is more than sufficient in demonstrating the effects of the misses. For funsies though, we can observe there is a linear relationship between the number of TLB misses and the latency.
 
-![tlb misses](assets/images/tlb-misses.png)
+![tlb misses](/docs/Project-1/assets/images/tlb-misses.png)
 
 
 
