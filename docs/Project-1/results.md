@@ -73,6 +73,7 @@ Avg Read Latency for Main Memory: 11.412 ns
 Avg Write Latency for Main Memory: 14.650 ns
 ```
 
+
 ## Part 2
 
 We wish to evaluate the maximum bandwidth of the main memory under different data access granularity (i.e., 64B, 256B, 1024B) and different read vs. write intensity ratio (i.e., read-only, write-only, 70:30 ratio, 50:50 ratio). According to the task manager, as shown below, the memory clock speed is 3200 MT/s (megatransfers per second) or MHz for my laptop.
@@ -101,7 +102,8 @@ Next, we'd like a demonstration of what the queuing theory predicts in the trade
 
 All graphs show a general trend of increasing latency as the number of threads in use increased, which perfectly demonstrates queuing theory. The only outlier value is for the 4-thread combined latency, which spiked up drastically. However, it is clear that, regardless of the irregular behavior, the throughput decreases where latency increases and vice versa.
 
-# Part 4
+
+## Part 4
 
 Now, we want to examine the impact of cache miss ratio on the software speed performance. To prevent the impact of the software timing from affecting the measurements, we will utilize lighter compuations like multiplication. Additionally, we need to ensure we are encountering a cache miss. Unfortunately, I found that perf does not allow for outputting much of the information we were looking for on my system despite running with sudo. I've yet to find the cause of this issue.
 
@@ -122,7 +124,7 @@ Main Memory: Size = 50331648 bytes, Average Latency = 0.025444119 seconds, CPU C
 To note, as seen above, the base speed of my CPU is 2.30GHz, hence the short timing despite the large CPU Cycle counts. The cycles stalled will vary depending on the clock cycles. What can be applied in other scenarios is that the higher the memory block is on the hierarchy, the longer the recovery period is as is sensible. We see for each of the cache levels, there is a whole order (power of 10) difference in the latencies.
 
 
-# Part 5
+## Part 5
 
 Lastly, we want to illustrate the impact of TLB table miss ratio on the software speed performance. This should be under similar circumstances as the previous part in terms of software operations. First I gained a better understanding of the TLB size, which is not very well documented in many places.
 
