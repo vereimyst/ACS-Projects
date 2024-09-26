@@ -7,7 +7,7 @@ Course Objectives:
 - Make your work practically useful
 
 Projects:
-1. Cache and Memory Performance Profiling ([code repo](https://github.com/vereimyst/ACS-Project-1))
+1. Cache and Memory Performance Profiling ([Project 1 Code](https://github.com/vereimyst/ACS-Project-1))
 2. Dense/Sparse Matrix-Matrix Multiplication
 3. SSD Performance Profiling
 4. In-Memory Key-Value Store with Concurrency Support
