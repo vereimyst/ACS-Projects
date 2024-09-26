@@ -11,4 +11,10 @@ search_enabled: false
 # logo: "/assets/images/m-callig.jpg"
 color_scheme: dark
 permalink: pretty
+
+defaults:
+  - scope:
+      path: "/assets/img"
+    values:
+      image: true
 ---
