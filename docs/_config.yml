@@ -14,7 +14,8 @@ permalink: pretty
 
 defaults:
   - scope:
-      path: "/assets/img"
+      path: "docs" # an empty string here means all files in the project
+      type: "pages"
     values:
-      image: true
+      layout: "default"
 ---
