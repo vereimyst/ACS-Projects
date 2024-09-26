@@ -30,7 +30,7 @@ L3 cache:       24 MiB (1 instance)
 
 This first method gives a generic overview of what cache structures exist in my laptop, an Alienware m15 R6. Notably, the numbers are rounded and have relatively low precision as a result. Additionally, we can (essentially) disregard the L1i cache capacity for the purposes of this project, as it is reserved for instructions. The second method unfortunately didn't work due to no SMBIOS nor DMI entry point being found. The third method gives a visual representation of the hierarchical structure that exists internally.
 
-![lstopo graphical output]({{ site.url }}/assets/images/proj-1/cpu.png)
+![lstopo graphical output](../assets/images/proj-1/cpu.png)
 
 Again, the capacity values have low precision, though the visualization is quite helpful, allowing us to better understand how each block is connected. The last method gives the highest level of precision as well as some needed details about cache line size and associativity.
 
