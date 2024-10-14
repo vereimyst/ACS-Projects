@@ -228,38 +228,38 @@ This combination implementation uses loop blocking, SIMD, and multithreading.
 Case 3: Sparse-Sparse Multiplication        Case 2: Dense-Sparse Multiplication         Case 1: Dense-Dense Multiplication
 
 ---------- Sparsity 10% ----------          ---------- Sparsity 10% ----------          
-1000    Time taken: 0.153361 s              500     Time taken: 0.0115527 s             200     Time taken: 0.00229349 s
-2000    Time taken: 0.578507 s              1000    Time taken: 0.0108954 s             400     Time taken: 0.00635556 s
-3000    Time taken: 1.35759 s               1500    Time taken: 0.031387 s              600     Time taken: 0.0287668 s
-4000    Time taken: 2.31637 s               2000    Time taken: 0.0689016 s             800     Time taken: 0.0838435 s
-5000    Time taken: 3.75233 s               2500    Time taken: 0.136175 s              1000    Time taken: 0.18758 s
-6000    Time taken: 5.31503 s               3000    Time taken: 0.279876 s              1200    Time taken: 0.598489 s
-7000    Time taken: 9.49456 s                                                     1400    Time taken: 1.3578 s
-8000    Time taken: 8.96483 s                                                     1600    Time taken: 2.58808 s
-9000    Time taken: 15.92 s                                                     1800    Time taken: 4.43944 s
-10000   Time taken: 21.4441 s                                                     2000    Time taken: 6.93806 s
+1000    Time taken: 0.0500951 s             500     Time taken: 0.0115527 s             200     Time taken: 0.00111633 s
+2000    Time taken: 0.0751144 s             1000    Time taken: 0.0108954 s             400     Time taken: 0.00894011 s
+3000    Time taken: 0.204151 s              1500    Time taken: 0.031387 s              600     Time taken: 0.0142791 s
+4000    Time taken: 0.266475 s              2000    Time taken: 0.0689016 s             800     Time taken: 0.0250555 s
+5000    Time taken: 0.749967 s              2500    Time taken: 0.136175 s              1000    Time taken: 0.0394458 s
+6000    Time taken: 0.826338 s              3000    Time taken: 0.279876 s              1200    Time taken: 0.0873932 s
+7000    Time taken: 1.35978 s                                                           1400    Time taken: 0.125216 s
+8000    Time taken: 1.9462 s                                                            1600    Time taken: 0.168141 s
+9000    Time taken: 3.39149 s                                                           1800    Time taken: 0.225785 s
+10000   Time taken: 4.30134 s                                                           2000    Time taken: 0.304109 s
 ---------- Sparsity 1% ----------           ---------- Sparsity 1% ----------       
-1000    Time taken: 0.0170954 s             500     Time taken: 0.000586495 s       
-2000    Time taken: 0.121548 s              1000    Time taken: 0.0032973 s         
-3000    Time taken: 0.343061 s              1500    Time taken: 0.0161029 s         
-4000    Time taken: 0.985372 s              2000    Time taken: 0.0203805 s         
-5000    Time taken: 1.75422 s               2500    Time taken: 0.0329092 s         
-6000    Time taken: 2.70638 s               3000    Time taken: 0.0469931 s         
-7000    Time taken: 3.82422 s         
-8000    Time taken: 5.48159 s         
-9000    Time taken: 7.38803 s         
-10000   Time taken: 10.9584 s         
+1000    Time taken: 0.00577733 s            500     Time taken: 0.000586495 s       
+2000    Time taken: 0.0171185 s             1000    Time taken: 0.0032973 s         
+3000    Time taken: 0.0329077 s             1500    Time taken: 0.0161029 s         
+4000    Time taken: 0.0758188 s             2000    Time taken: 0.0203805 s         
+5000    Time taken: 0.162605 s              2500    Time taken: 0.0329092 s         
+6000    Time taken: 0.21192 s               3000    Time taken: 0.0469931 s         
+7000    Time taken: 0.366394 s   
+8000    Time taken: 0.702776 s   
+9000    Time taken: 0.72885 s   
+10000   Time taken: 0.884248 s   
 ---------- Sparsity 0.1% ----------         ---------- Sparsity 0.1% ----------
-1000    Time taken: 0.00816487 s            500     Time taken: 0.000515271 s
-2000    Time taken: 0.00618787 s            1000    Time taken: 0.00805832 s
-3000    Time taken: 0.0100863 s             1500    Time taken: 0.00634668 s
-4000    Time taken: 0.0163837 s             2000    Time taken: 0.011154 s
-5000    Time taken: 0.0278282 s             2500    Time taken: 0.0233201 s
-6000    Time taken: 0.0615856 s             3000    Time taken: 0.0270084 s
-7000    Time taken: 0.0772387 s         
-8000    Time taken: 0.0919205 s         
-9000    Time taken: 0.123467 s         
-10000   Time taken: 0.178473 s         
+1000    Time taken: 0.00584964 s            500     Time taken: 0.000515271 s
+2000    Time taken: 0.000668794 s           1000    Time taken: 0.00805832 s
+3000    Time taken: 0.00130187 s            1500    Time taken: 0.00634668 s
+4000    Time taken: 0.00811603 s            2000    Time taken: 0.011154 s
+5000    Time taken: 0.00983578 s            2500    Time taken: 0.0233201 s
+6000    Time taken: 0.0106066 s             3000    Time taken: 0.0270084 s
+7000    Time taken: 0.0104132 s     
+8000    Time taken: 0.014773 s     
+9000    Time taken: 0.0260622 s    
+10000   Time taken: 0.0215956 s    
 ```
 ![combined opt dense-dense matrix multiplication graph of time vs matrix size]({{ site.url }}/assets/images/proj-2/combined-dense-dense.png)
 ![combined opt dense-sparse matrix multiplication graph of time vs matrix size]({{ site.url }}/assets/images/proj-2/combined-dense-sparse.png)
@@ -286,7 +286,6 @@ For all dense-dense and dense-sparse matrix multiplication, the combination impl
 ![all methods sparse-sparse 10% sparsity comparison]({{ site.url }}/assets/images/proj-2/sparse-sparse-comp-all-0.1.png)
 ![all methods sparse-sparse 1% sparsity comparison]({{ site.url }}/assets/images/proj-2/sparse-sparse-comp-all-0.01.png)
 ![all methods sparse-sparse 0.1% sparsity comparison]({{ site.url }}/assets/images/proj-2/sparse-sparse-comp-all-0.001.png)
-The combined implementation is unexpectedly the worst performing method for 1% sparcity in sparse-sparse matrix multiplication, but not 0.1% sparcity. This variation can likely be attributed to randomness of non-zero element allocations and/or the combined overhead of multithreading, SIMD, and nested loops as mentioned above.
 
 
 ## Citations
