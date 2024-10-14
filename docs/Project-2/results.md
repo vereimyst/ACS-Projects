@@ -228,38 +228,38 @@ This combination implementation uses loop blocking, SIMD, and multithreading.
 Case 3: Sparse-Sparse Multiplication        Case 2: Dense-Sparse Multiplication         Case 1: Dense-Dense Multiplication
 
 ---------- Sparsity 10% ----------          ---------- Sparsity 10% ----------          
-1000    Time taken: 0.176419 s              500     Time taken: 0.0115527 s             200     Time taken: 0.00229349 s
-2000    Time taken: 0.671039 s              1000    Time taken: 0.0108954 s             400     Time taken: 0.00635556 s
-3000    Time taken: 1.49113 s               1500    Time taken: 0.031387 s              600     Time taken: 0.0287668 s
-4000    Time taken: 3.557 s                 2000    Time taken: 0.0689016 s             800     Time taken: 0.0838435 s
-5000    Time taken: 5.97614 s               2500    Time taken: 0.136175 s              1000    Time taken: 0.18758 s
-6000    Time taken: 10.7035 s               3000    Time taken: 0.279876 s              1200    Time taken: 0.598489 s
-7000    Time taken: 14.0007 s                                                           1400    Time taken: 1.3578 s
-8000    Time taken: 17.5047 s                                                           1600    Time taken: 2.58808 s
-9000    Time taken: 23.0019 s                                                           1800    Time taken: 4.43944 s
-10000   Time taken: 29.3978 s                                                           2000    Time taken: 6.93806 s
+1000    Time taken: 0.153361 s              500     Time taken: 0.0115527 s             200     Time taken: 0.00229349 s
+2000    Time taken: 0.578507 s              1000    Time taken: 0.0108954 s             400     Time taken: 0.00635556 s
+3000    Time taken: 1.35759 s               1500    Time taken: 0.031387 s              600     Time taken: 0.0287668 s
+4000    Time taken: 2.31637 s               2000    Time taken: 0.0689016 s             800     Time taken: 0.0838435 s
+5000    Time taken: 3.75233 s               2500    Time taken: 0.136175 s              1000    Time taken: 0.18758 s
+6000    Time taken: 5.31503 s               3000    Time taken: 0.279876 s              1200    Time taken: 0.598489 s
+7000    Time taken: 9.49456 s                                                     1400    Time taken: 1.3578 s
+8000    Time taken: 8.96483 s                                                     1600    Time taken: 2.58808 s
+9000    Time taken: 15.92 s                                                     1800    Time taken: 4.43944 s
+10000   Time taken: 21.4441 s                                                     2000    Time taken: 6.93806 s
 ---------- Sparsity 1% ----------           ---------- Sparsity 1% ----------       
-1000    Time taken: 0.0188708 s             500     Time taken: 0.000586495 s       
-2000    Time taken: 0.124822 s              1000    Time taken: 0.0032973 s         
-3000    Time taken: 0.423305 s              1500    Time taken: 0.0161029 s         
-4000    Time taken: 0.914149 s              2000    Time taken: 0.0203805 s         
-5000    Time taken: 2.96284 s               2500    Time taken: 0.0329092 s         
-6000    Time taken: 3.78806 s               3000    Time taken: 0.0469931 s         
-7000    Time taken: 6.81495 s               
-8000    Time taken: 10.4765 s               
-9000    Time taken: 13.5123 s               
-10000   Time taken: 18.0108 s               
+1000    Time taken: 0.0170954 s             500     Time taken: 0.000586495 s       
+2000    Time taken: 0.121548 s              1000    Time taken: 0.0032973 s         
+3000    Time taken: 0.343061 s              1500    Time taken: 0.0161029 s         
+4000    Time taken: 0.985372 s              2000    Time taken: 0.0203805 s         
+5000    Time taken: 1.75422 s               2500    Time taken: 0.0329092 s         
+6000    Time taken: 2.70638 s               3000    Time taken: 0.0469931 s         
+7000    Time taken: 3.82422 s         
+8000    Time taken: 5.48159 s         
+9000    Time taken: 7.38803 s         
+10000   Time taken: 10.9584 s         
 ---------- Sparsity 0.1% ----------         ---------- Sparsity 0.1% ----------
-1000    Time taken: 0.000522107 s           500     Time taken: 0.000515271 s
-2000    Time taken: 0.00617589 s            1000    Time taken: 0.00805832 s
-3000    Time taken: 0.0088667 s             1500    Time taken: 0.00634668 s
-4000    Time taken: 0.0189584 s             2000    Time taken: 0.011154 s
-5000    Time taken: 0.0379743 s             2500    Time taken: 0.0233201 s
-6000    Time taken: 0.0597763 s             3000    Time taken: 0.0270084 s
-7000    Time taken: 0.104162 s              
-8000    Time taken: 0.130739 s              
-9000    Time taken: 0.172762 s              
-10000   Time taken: 0.245112 s              
+1000    Time taken: 0.00816487 s            500     Time taken: 0.000515271 s
+2000    Time taken: 0.00618787 s            1000    Time taken: 0.00805832 s
+3000    Time taken: 0.0100863 s             1500    Time taken: 0.00634668 s
+4000    Time taken: 0.0163837 s             2000    Time taken: 0.011154 s
+5000    Time taken: 0.0278282 s             2500    Time taken: 0.0233201 s
+6000    Time taken: 0.0615856 s             3000    Time taken: 0.0270084 s
+7000    Time taken: 0.0772387 s         
+8000    Time taken: 0.0919205 s         
+9000    Time taken: 0.123467 s         
+10000   Time taken: 0.178473 s         
 ```
 ![combined opt dense-dense matrix multiplication graph of time vs matrix size]({{ site.url }}/assets/images/proj-2/combined-dense-dense.png)
 ![combined opt dense-sparse matrix multiplication graph of time vs matrix size]({{ site.url }}/assets/images/proj-2/combined-dense-sparse.png)
