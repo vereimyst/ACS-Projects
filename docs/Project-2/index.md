@@ -1,10 +1,9 @@
 ---
 layout: default
 title: Project 2
-permalink: /project-2
+permalink: /project-2-desc
 nav_order: 3
-# parent: Myst's Projects for ACS
-has_children: false
+has_children: true
 ---
 
 # Project #2: Dense/Sparse Matrix-Matrix Multiplication
