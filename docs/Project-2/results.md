@@ -78,7 +78,7 @@ Case 3: Sparse-Sparse Multiplication        Case 2: Dense-Sparse Multiplication 
 10000   Time taken: 418 ms                  
 ```
 
-The results can be better visualized in the following graphs. The general trends are as expected. Dense-Dense multiplication takes much longer and scales much faster than Dense-Sparse or Sparse-Sparse, while Dense-Sparse is generally somewhat slower Sparse-Sparse and both appear to scale at a similar rate. We can attribute the variation in Dense-Dense multiplication results to randomization as change in sparsity value has no effect on the former. The effects on sparsity on the runtime are also obvious. The higher the sparsity, the higher the runtime. This can be seen in both the output values above and the graphs below.
+The results can be better visualized in the following graphs. The general trends are as expected. Dense-Dense multiplication takes much longer and scales much faster than Dense-Sparse or Sparse-Sparse, while Dense-Sparse is generally somewhat slower Sparse-Sparse and both appear to scale at a similar rate. We can attribute the variation in Dense-Dense multiplication results to randomization as change in sparsity value has no effect on the former. The effects on sparsity on the runtime are also obvious. The higher the sparsity percentage, the higher the runtime. This can be seen in both the output values above and the graphs below.
 
 ![naive dense-dense matrix multiplication graph of time vs matrix size]({{ site.url }}/assets/images/proj-2/naive-dense-dense.png)
 ![naive dense-sparse matrix multiplication graph of time vs matrix size]({{ site.url }}/assets/images/proj-2/naive-dense-sparse.png)
